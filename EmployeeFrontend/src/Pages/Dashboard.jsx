@@ -19,7 +19,7 @@ function Dashboard() {
         );
 
         const departmentResponse = await api.get(
-          'http://localhost:8080/Employee/api/totalCountDept'
+          '/Employee/api/totalCountDept'
         );
 
         setTotalEmployees(employeeResponse.data);
