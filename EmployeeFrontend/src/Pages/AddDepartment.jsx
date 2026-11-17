@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import axios from 'axios';
 import './AddDepartment.css';
 import "../Api/axiosConfig";
 import api from '../Api/axiosConfig';

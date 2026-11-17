@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
-import axios from 'axios';
 import './Login.css';
+import api from '../Api/axiosConfig';
 
 function Login({ onRegister, onLogin }) {
 
@@ -16,7 +16,7 @@ function Login({ onRegister, onLogin }) {
         try {
             setLoading(true);
 
-            const response = await axios.post(
+            const response = await api.post(
                 'http://localhost:8080/users/api/login',
                 {
                     username: username,

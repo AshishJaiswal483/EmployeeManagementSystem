@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import api from '../Api/axiosConfig';
 import './DepartmentWise.css';

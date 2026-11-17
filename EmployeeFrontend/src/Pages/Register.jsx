@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
-import axios from 'axios';
 import './Register.css';
+import api from '../Api/axiosConfig';
 
 function Register({ onLogin }) {
 
@@ -16,7 +16,7 @@ function Register({ onLogin }) {
         try {
             setLoading(true);
 
-            const response = await axios.post(
+            const response = await api.post(
                 'http://localhost:8080/users/api/registerUsers',
                 {
                     userName: userName,

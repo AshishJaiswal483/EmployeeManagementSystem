@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import './DeleteEmployee.css';
 import api from '../Api/axiosConfig';
