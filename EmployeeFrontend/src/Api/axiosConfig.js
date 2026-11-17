@@ -2,7 +2,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080'
+    baseURL: import.meta.env.PROD
+        ? 'https://employee-management-system-iglb.onrender.com'
+        : 'http://localhost:8080'
 });
 
 // 1. Automatically attach JWT to every request
