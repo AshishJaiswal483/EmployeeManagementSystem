@@ -17,7 +17,7 @@ function Register({ onLogin }) {
             setLoading(true);
 
             const response = await api.post(
-                'http://localhost:8080/users/api/registerUsers',
+                '/users/api/registerUsers',
                 {
                     userName: userName,
                     password: password,

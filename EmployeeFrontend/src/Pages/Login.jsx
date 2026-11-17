@@ -17,7 +17,7 @@ function Login({ onRegister, onLogin }) {
             setLoading(true);
 
             const response = await api.post(
-                'http://localhost:8080/users/api/login',
+                '/users/api/login',
                 {
                     username: username,
                     password: password

@@ -8,7 +8,7 @@ function AllEmployees() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    api.get('http://localhost:8080/Employee/api/GetAll')
+    api.get('/Employee/api/GetAll')
       .then((response) => {
         setEmployees(response.data);
         setLoading(false);

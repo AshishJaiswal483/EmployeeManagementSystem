@@ -15,7 +15,7 @@ function Dashboard() {
       try {
 
         const employeeResponse = await api.get(
-          'http://localhost:8080/Employee/api/totalCountEmp'
+          '/Employee/api/totalCountEmp'
         );
 
         const departmentResponse = await api.get(

@@ -24,7 +24,7 @@ function AddDepartment() {
 
     try {
       const response = await api.post(
-        'http://localhost:8080/Employee/api/add',
+        '/Employee/api/add',
         requestData
       );
 
